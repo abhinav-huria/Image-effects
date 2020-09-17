@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Image Filter Mini Project</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div id="xyz">
+        <a href="hs1.html">Green Screen</a>
+        <a href="w4p.html">Filters</a>
+    </div>
+    <table>
+        <tr>
+            <td>
+                <div>
+                    <h2 class="nomarginbottom">Load Image:</h2>
+                    <input id="file" type="file" multiple="false" accept="image/*" onchange="loadImage()">
+
+
+                    <h2 class="nomarginbottom">Choose Filter:</h2>
+
+                    <div class="filters">
+                        <input id="btnRed" type="button" value="Surprise Me" onclick="makeRed()">
+                        <input id="btnRainbow" type="button" value="Rainbow Filter" onclick="makeRainbow()">
+                        <input id="btnGrey" type="button" value="Greyscale Filter" onclick="makeGrey()">
+                    </div>
+
+                    <div class="filters">
+                        <h2 class="nomarginbottom">Reset Filters/Download</h2>
+                        <input id="btnReset" type="button" value="Reset Image" onclick="resetImage()">
+                        <input type="button" value="Download" onclick="download()">
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div id="abc">
+                    <canvas id="canvas"></canvas>
+                </div>
+            </td>
+        </tr>
+    </table>
+
+    <!-- Simple Image Library -->
+    <script src="https://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
